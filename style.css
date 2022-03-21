@@ -4,11 +4,7 @@ header {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    /* background-attachment: fixed; */
-    /* width: 1280px;
-     height: 100vh; */
-    /* font-family: 'Mukta', sans-serif; */
-    /* height: 100vh; */
+    font-family: 'Mukta', sans-serif;
     height: 600px;
 }
 
@@ -22,7 +18,7 @@ header {
     color: white;
 }
 
-.nav {
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: right;
@@ -30,13 +26,15 @@ header {
     margin-right: 30px;
 }
 
-.menu {
+.nav {
     display: flex;
     width: 100%;
     margin: 0 auto;
     max-width: 1100px;
     justify-content: space-between;
 }
+
+
 
 li {
     display: inline;
@@ -75,9 +73,33 @@ button:hover {
     margin-bottom: 30px;
 }
 
+a {
+    text-decoration: none;
+}
 
-ul {
-    margin: inherit;
+.menu>li {
+    position: relative;
+}
+
+.menu>li>a {
+    color: #ffffff;
+}
+
+.submenu {
+    background: #a7c7e056;
+    position: absolute;
+    top: 100%;
+    width: 50px;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .5s ease-in-out;
+    text-align: center
+}
+
+.menu>li:hover .submenu {
+    opacity: 1;
+    transform: scaleY(1);
 }
 
 body {
@@ -95,6 +117,7 @@ body {
 
 .cart {
     height: 260px;
+    margin: 0;
 
 }
 
@@ -110,7 +133,7 @@ body {
 
 #cart1 {
 
-    margin-top: 15px;
+    margin-top: 8px;
 }
 
 #cart2 {
@@ -139,9 +162,9 @@ body {
 
 
 .start {
-    color: black;
+    color: rgb(3, 41, 83);
     border-radius: 30px;
-    border: 2px solid black;
+    border: 2px solid rgb(6, 22, 65);
 }
 
 #btn2 {
@@ -162,13 +185,6 @@ body {
     background-color: white;
 }
 
-/* #btn1{
-    display: inline-block;
-    transition-duration:10s,2s;
-    transition-timing-function: ease;
-    transition-delay: 0s; 
-    transition:1ms;} */
-
 #btn1:hover {
     background-color: rgb(141, 138, 146);
     border-radius: 50px;
@@ -187,4 +203,43 @@ body {
 #btn4:hover {
     background-color: rgb(141, 138, 146);
     border-radius: 50px;
+}
+
+.travel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trav {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 300px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 50px;
+margin-left: 60px;
+}
+#tr{
+    margin-left: 75px;
+}
+.world{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(73, 78, 107);
+    margin-top: -100px;
+}
+
+ 
+.travel2{
+    display: flex;
+    justify-content: space-between;
+}
+#tra{
+    margin-top: -100px;
+}
+
+.trav:hover{
+    color: rgb(238, 245, 198);
+    background-color: rgba(0, 0, 0, 0.397);
+   /* как сделать background шире и выше?  */
+   
 }
