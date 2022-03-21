@@ -34,8 +34,6 @@ header {
     justify-content: space-between;
 }
 
-
-
 li {
     display: inline;
     margin: 20px;
@@ -94,7 +92,7 @@ a {
     transform: scaleY(0);
     transform-origin: 0 0;
     transition: .5s ease-in-out;
-    text-align: center
+    text-align: left;
 }
 
 .menu>li:hover .submenu {
